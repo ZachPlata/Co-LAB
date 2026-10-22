@@ -27,6 +27,7 @@ namespace UESkillExchange
             btnLogout = new Button();
             btnMyDashboard = new Button();
             btnNavMarketplace = new Button();
+            btnTestTradeRequest = new Button();
             pnlSidebarTop = new Panel();
             lblBrand = new Label();
             lblBrandSub = new Label();
@@ -56,6 +57,7 @@ namespace UESkillExchange
             // 
             pnlSidebar.BackColor = Color.FromArgb(10, 16, 11);
             pnlSidebar.Controls.Add(pnlSidebarBottom);
+            pnlSidebar.Controls.Add(btnTestTradeRequest);
             pnlSidebar.Controls.Add(btnNavMarketplace);
             pnlSidebar.Controls.Add(btnMyDashboard);
             pnlSidebar.Controls.Add(pnlSidebarTop);
@@ -147,6 +149,25 @@ namespace UESkillExchange
             btnNavMarketplace.TextAlign = ContentAlignment.MiddleLeft;
             btnNavMarketplace.UseVisualStyleBackColor = false;
             btnNavMarketplace.Click += btnNavMarketplace_Click;
+            // 
+            // btnTestTradeRequest
+            // 
+            btnTestTradeRequest.BackColor = Color.Transparent;
+            btnTestTradeRequest.Cursor = Cursors.Hand;
+            btnTestTradeRequest.Dock = DockStyle.Top;
+            btnTestTradeRequest.FlatAppearance.BorderSize = 0;
+            btnTestTradeRequest.FlatStyle = FlatStyle.Flat;
+            btnTestTradeRequest.Font = new Font("Segoe UI Semibold", 9.5F, FontStyle.Bold);
+            btnTestTradeRequest.ForeColor = Color.FromArgb(100, 210, 140);
+            btnTestTradeRequest.Location = new Point(0, 180);
+            btnTestTradeRequest.Name = "btnTestTradeRequest";
+            btnTestTradeRequest.Padding = new Padding(20, 0, 0, 0);
+            btnTestTradeRequest.Size = new Size(220, 44);
+            btnTestTradeRequest.TabIndex = 3;
+            btnTestTradeRequest.Text = "⚡ Test Trade Request";
+            btnTestTradeRequest.TextAlign = ContentAlignment.MiddleLeft;
+            btnTestTradeRequest.UseVisualStyleBackColor = false;
+            btnTestTradeRequest.Click += btnTestTradeRequest_Click;
             // 
             // pnlSidebarTop
             // 
@@ -586,12 +607,28 @@ namespace UESkillExchange
             Label lblMsg = new Label
             {
                 Text = message,
-                Dock = DockStyle.Fill,
+                Dock = DockStyle.Top,
+                Height = 65,
                 TextAlign = ContentAlignment.MiddleCenter,
                 Font = new Font("Segoe UI", 10F, FontStyle.Regular),
                 ForeColor = Color.FromArgb(170, 188, 175)
             };
 
+            Button btnEmptyTest = new Button
+            {
+                Text = "⚡ Open Test Trade Request Dialog",
+                Size = new Size(260, 36),
+                Location = new Point((pnlEmpty.Width - 260) / 2, 85),
+                BackColor = Color.FromArgb(46, 105, 63),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnEmptyTest.FlatAppearance.BorderSize = 0;
+            btnEmptyTest.Click += btnTestTradeRequest_Click;
+
+            pnlEmpty.Controls.Add(btnEmptyTest);
             pnlEmpty.Controls.Add(lblMsg);
             return pnlEmpty;
         }
@@ -635,6 +672,7 @@ namespace UESkillExchange
         private System.Windows.Forms.Label lblBrand;
         private System.Windows.Forms.Label lblBrandSub;
         private System.Windows.Forms.Button btnNavMarketplace;
+        private System.Windows.Forms.Button btnTestTradeRequest;
         private System.Windows.Forms.Button btnMyDashboard;
         private System.Windows.Forms.Panel pnlSidebarBottom;
         private System.Windows.Forms.Label lblSessionUser;
