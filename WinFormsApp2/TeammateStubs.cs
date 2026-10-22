@@ -36,13 +36,46 @@ namespace UESkillExchange
         }
     }
 
-    public class TradeRequestDialog : Form
+    /// <summary>
+    /// Member 3 Trade Request Form integration.
+    /// Connects MarketplaceForm (and other forms) in UESkillExchange to the full FormTradeRequest implementation.
+    /// </summary>
+    public class TradeRequestDialog : global::FormTradeRequest.FormTradeRequest
     {
         public TradeRequestDialog(int listingId, string skillOffered, string skillWanted)
+            : base(listingId, skillOffered, skillWanted)
         {
-            this.Text = "Request Skill Trade";
-            this.StartPosition = FormStartPosition.CenterParent;
-            this.Size = new System.Drawing.Size(480, 420);
+        }
+
+        public TradeRequestDialog(int listingId, string skillOffered, string skillWanted, string userName, string deptYear, double rating = 5.0)
+            : base(listingId, skillOffered, skillWanted, userName, deptYear, rating)
+        {
+        }
+
+        public TradeRequestDialog()
+            : base()
+        {
+        }
+    }
+
+    /// <summary>
+    /// Alias allowing code in UESkillExchange to instantiate FormTradeRequest directly.
+    /// </summary>
+    public class FormTradeRequest : global::FormTradeRequest.FormTradeRequest
+    {
+        public FormTradeRequest(int listingId, string skillOffered, string skillWanted)
+            : base(listingId, skillOffered, skillWanted)
+        {
+        }
+
+        public FormTradeRequest(int listingId, string skillOffered, string skillWanted, string userName, string deptYear, double rating = 5.0)
+            : base(listingId, skillOffered, skillWanted, userName, deptYear, rating)
+        {
+        }
+
+        public FormTradeRequest()
+            : base()
+        {
         }
     }
 }

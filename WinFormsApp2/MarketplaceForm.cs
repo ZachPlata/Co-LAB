@@ -162,7 +162,7 @@ namespace UESkillExchange
                         skillWanted,
                         description,
                         createdAt,
-                        (s, e) => OpenTradeDialog(listingId, skillOffered, skillWanted),
+                        (s, e) => OpenTradeDialog(listingId, skillOffered, skillWanted, ownerName, college),
                         (s, e) => OpenReportDialog(ownerId, listingId, ownerName)
                     );
 
@@ -188,9 +188,9 @@ namespace UESkillExchange
             }
         }
 
-        private void OpenTradeDialog(int listingId, string skillOffered, string skillWanted)
+        private void OpenTradeDialog(int listingId, string skillOffered, string skillWanted, string ownerName = "", string college = "")
         {
-            using (TradeRequestDialog dlg = new TradeRequestDialog(listingId, skillOffered, skillWanted))
+            using (TradeRequestDialog dlg = new TradeRequestDialog(listingId, skillOffered, skillWanted, ownerName, college))
             {
                 dlg.ShowDialog(this);
             }
@@ -283,6 +283,18 @@ namespace UESkillExchange
                 }
                 this.Close();
             }
+        }
+
+        private void btnTestTradeRequest_Click(object sender, EventArgs e)
+        {
+            // Open the Trade Request dialog with sample skill listing details
+            OpenTradeDialog(
+                listingId: 1,
+                skillOffered: "C# WinForms & MySQL Tutoring",
+                skillWanted: "Figma UI Design or Video Editing",
+                ownerName: "Samantha Cruz",
+                college: "College of Computer Studies and Systems (CCSS)"
+            );
         }
 
         private void lblBrand_Click(object sender, EventArgs e)
