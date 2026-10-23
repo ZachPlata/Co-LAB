@@ -6,15 +6,7 @@ namespace UESkillExchange
     // Lightweight placeholder stubs for teammate forms.
     // Replace with Member 2, 3, and 4 actual implementations when integrated.
 
-    public class AuthForm : Form
-    {
-        public AuthForm()
-        {
-            this.Text = "UE Skill Exchange - Authentication";
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.Size = new System.Drawing.Size(400, 300);
-        }
-    }
+// auth form was here
 
     public class PostSkillForm : Form
     {
