@@ -100,3 +100,7 @@ C:\Users\WIN10\Documents\GitHub\Co-LAB\WinFormsApp2\obj\Debug\net10.0-windows\re
 C:\Users\WIN10\Documents\GitHub\Co-LAB\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp2.pdb
 C:\Users\WIN10\Documents\GitHub\Co-LAB\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp2.genruntimeconfig.cache
 C:\Users\WIN10\Documents\GitHub\Co-LAB\WinFormsApp2\obj\Debug\net10.0-windows\ref\WinFormsApp2.dll
+C:\Users\Zach Plata\source\repos\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\FormTradeRequest.FormTradeRequest.resources
+C:\Users\Zach Plata\source\repos\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\UESkillExchange.PostSkillForm.resources
+C:\Users\Zach Plata\source\repos\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\UESkillExchange.TermsDialog.resources
+C:\Users\Zach Plata\source\repos\WinFormsApp2\WinFormsApp2\obj\Debug\net10.0-windows\WinFormsApp2.sourcelink.json

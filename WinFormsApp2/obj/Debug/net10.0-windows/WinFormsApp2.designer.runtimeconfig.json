@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\WIN10\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\WIN10\\.nuget\\packages"
+      "C:\\Users\\Zach Plata\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Zach Plata\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
