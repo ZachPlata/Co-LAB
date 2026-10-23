@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trowa\\source\\repos\\Co-LAB\\WinFormsApp2\\WinFormsApp2.csproj": {}
+    "C:\\Users\\Zach Plata\\source\\repos\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trowa\\source\\repos\\Co-LAB\\WinFormsApp2\\WinFormsApp2.csproj": {
+    "C:\\Users\\Zach Plata\\source\\repos\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trowa\\source\\repos\\Co-LAB\\WinFormsApp2\\WinFormsApp2.csproj",
+        "projectUniqueName": "C:\\Users\\Zach Plata\\source\\repos\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
         "projectName": "WinFormsApp2",
-        "projectPath": "C:\\Users\\trowa\\source\\repos\\Co-LAB\\WinFormsApp2\\WinFormsApp2.csproj",
-        "packagesPath": "C:\\Users\\trowa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trowa\\source\\repos\\Co-LAB\\WinFormsApp2\\obj\\",
+        "projectPath": "C:\\Users\\Zach Plata\\source\\repos\\WinFormsApp2\\WinFormsApp2\\WinFormsApp2.csproj",
+        "packagesPath": "C:\\Users\\Zach Plata\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zach Plata\\source\\repos\\WinFormsApp2\\WinFormsApp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\trowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Zach Plata\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
