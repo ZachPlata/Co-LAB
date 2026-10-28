@@ -25,7 +25,7 @@ namespace Co_LAB
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(24, 24, 27);
             Name = "uc_TradeRequests";
-            Size = new Size(950, 635);
+            Size = new Size(950, 632);
             ResumeLayout(false);
         }
 

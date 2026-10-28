@@ -1,6 +1,6 @@
 namespace Co_LAB
 {
-    partial class uc_StudentDashboard
+    partial class uc_UserDashboard
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -19,13 +19,13 @@ namespace Co_LAB
         {
             SuspendLayout();
             // 
-            // uc_StudentDashboard
+            // uc_UserDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(24, 24, 27);
-            Name = "uc_StudentDashboard";
-            Size = new Size(950, 635);
+            Name = "uc_UserDashboard";
+            Size = new Size(950, 632);
             ResumeLayout(false);
         }
 

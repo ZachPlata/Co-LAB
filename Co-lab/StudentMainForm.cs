@@ -11,21 +11,21 @@ namespace Co_LAB
         private void StudentMainForm_Load(object sender, EventArgs e)
         {
             if (DesignMode) return;
-            btn_StudentDashboard.PerformClick();
+            btn_SkillExchange.PerformClick();
         }
 
         // ==========================================
         // SIDEBAR BUTTON CLICK EVENTS (TRANSITIONS)
         // ==========================================
 
-        private void btn_StudentDashboard_Click(object sender, EventArgs e)
+        private void btn_SkillExchange_Click(object sender, EventArgs e)
         {
-            uc_StudentDashboard frm = new uc_StudentDashboard();
+            uc_SkillExchange frm = new uc_SkillExchange();
             panelContent.Controls.Clear();
             panelContent.Controls.Add(frm);
             frm.Show();
-            SetActiveButton(btn_StudentDashboard);
-            lblHeaderTitle.Text = "Student Dashboard";
+            SetActiveButton(btn_SkillExchange);
+            lblHeaderTitle.Text = "Skill Exchange";
         }
 
         private void btn_PostSkill_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Co_LAB
             panelContent.Controls.Add(frm);
             frm.Show();
             SetActiveButton(btn_ManageSkills);
-            lblHeaderTitle.Text = "Offered Skills";
+            lblHeaderTitle.Text = "My Listings";
         }
 
         private void btn_TradeRequests_Click(object sender, EventArgs e)
@@ -58,15 +58,31 @@ namespace Co_LAB
             lblHeaderTitle.Text = "Trade Requests";
         }
 
+        private void btn_UserDashboard_Click(object sender, EventArgs e)
+        {
+            uc_UserDashboard frm = new uc_UserDashboard();
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(frm);
+            frm.Show();
+            SetActiveButton(btn_UserDashboard);
+            lblHeaderTitle.Text = "Student Profile & Dashboard";
+        }
+
+        private void lblWelcome_Click(object sender, EventArgs e)
+        {
+            btn_UserDashboard.PerformClick();
+        }
+
         private void SetActiveButton(Button activeButton)
         {
-            Button[] navButtons = { btn_StudentDashboard, btn_PostSkill, btn_ManageSkills, btn_TradeRequests };
+            Button[] navButtons = { btn_SkillExchange, btn_PostSkill, btn_ManageSkills, btn_TradeRequests };
             foreach (var btn in navButtons)
             {
                 if (btn == activeButton)
                 {
                     btn.BackColor = Color.FromArgb(28, 28, 33);
                     btn.ForeColor = Color.FromArgb(16, 185, 129); // Emerald Green
+                    pnlNavIndicator.Visible = true;
                     pnlNavIndicator.Location = new Point(0, btn.Top);
                     pnlNavIndicator.Height = btn.Height;
                 }
@@ -74,6 +90,21 @@ namespace Co_LAB
                 {
                     btn.BackColor = Color.Transparent;
                     btn.ForeColor = Color.FromArgb(161, 161, 170); // Muted gray
+                }
+            }
+
+            if (btn_UserDashboard != null)
+            {
+                if (activeButton == btn_UserDashboard)
+                {
+                    btn_UserDashboard.BackColor = Color.FromArgb(28, 28, 33);
+                    btn_UserDashboard.ForeColor = Color.FromArgb(16, 185, 129);
+                    pnlNavIndicator.Visible = false;
+                }
+                else
+                {
+                    btn_UserDashboard.BackColor = Color.Transparent;
+                    btn_UserDashboard.ForeColor = Color.FromArgb(161, 161, 170);
                 }
             }
         }

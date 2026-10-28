@@ -24,6 +24,7 @@ namespace Co_LAB
             btn_ReportedStudents = new Button();
             btn_ModerateListings = new Button();
             btn_SkillCategories = new Button();
+            btn_AdminDashboard = new Button();
             pnlSidebarBottom = new Panel();
             btn_SignOut = new Button();
             lblAdminInfo = new Label();
@@ -65,6 +66,7 @@ namespace Co_LAB
             pnlNavContainer.Controls.Add(btn_ReportedStudents);
             pnlNavContainer.Controls.Add(btn_ModerateListings);
             pnlNavContainer.Controls.Add(btn_SkillCategories);
+            pnlNavContainer.Controls.Add(btn_AdminDashboard);
             pnlNavContainer.Dock = DockStyle.Fill;
             pnlNavContainer.Location = new Point(0, 85);
             pnlNavContainer.Name = "pnlNavContainer";
@@ -90,7 +92,7 @@ namespace Co_LAB
             btn_UpdateTOS.FlatStyle = FlatStyle.Flat;
             btn_UpdateTOS.Font = new Font("Segoe UI", 10F);
             btn_UpdateTOS.ForeColor = Color.FromArgb(161, 161, 170);
-            btn_UpdateTOS.Location = new Point(0, 160);
+            btn_UpdateTOS.Location = new Point(0, 210);
             btn_UpdateTOS.Name = "btn_UpdateTOS";
             btn_UpdateTOS.Padding = new Padding(22, 0, 10, 0);
             btn_UpdateTOS.Size = new Size(250, 50);
@@ -110,7 +112,7 @@ namespace Co_LAB
             btn_ReportedStudents.FlatStyle = FlatStyle.Flat;
             btn_ReportedStudents.Font = new Font("Segoe UI", 10F);
             btn_ReportedStudents.ForeColor = Color.FromArgb(161, 161, 170);
-            btn_ReportedStudents.Location = new Point(0, 110);
+            btn_ReportedStudents.Location = new Point(0, 160);
             btn_ReportedStudents.Name = "btn_ReportedStudents";
             btn_ReportedStudents.Padding = new Padding(22, 0, 10, 0);
             btn_ReportedStudents.Size = new Size(250, 50);
@@ -130,7 +132,7 @@ namespace Co_LAB
             btn_ModerateListings.FlatStyle = FlatStyle.Flat;
             btn_ModerateListings.Font = new Font("Segoe UI", 10F);
             btn_ModerateListings.ForeColor = Color.FromArgb(161, 161, 170);
-            btn_ModerateListings.Location = new Point(0, 60);
+            btn_ModerateListings.Location = new Point(0, 110);
             btn_ModerateListings.Name = "btn_ModerateListings";
             btn_ModerateListings.Padding = new Padding(22, 0, 10, 0);
             btn_ModerateListings.Size = new Size(250, 50);
@@ -148,17 +150,37 @@ namespace Co_LAB
             btn_SkillCategories.FlatAppearance.MouseDownBackColor = Color.FromArgb(35, 35, 42);
             btn_SkillCategories.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 33);
             btn_SkillCategories.FlatStyle = FlatStyle.Flat;
-            btn_SkillCategories.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btn_SkillCategories.ForeColor = Color.FromArgb(16, 185, 129);
-            btn_SkillCategories.Location = new Point(0, 10);
+            btn_SkillCategories.Font = new Font("Segoe UI", 10F);
+            btn_SkillCategories.ForeColor = Color.FromArgb(161, 161, 170);
+            btn_SkillCategories.Location = new Point(0, 60);
             btn_SkillCategories.Name = "btn_SkillCategories";
             btn_SkillCategories.Padding = new Padding(22, 0, 10, 0);
             btn_SkillCategories.Size = new Size(250, 50);
-            btn_SkillCategories.TabIndex = 0;
+            btn_SkillCategories.TabIndex = 1;
             btn_SkillCategories.Text = "Skill Categories";
             btn_SkillCategories.TextAlign = ContentAlignment.MiddleLeft;
             btn_SkillCategories.UseVisualStyleBackColor = true;
             btn_SkillCategories.Click += btn_SkillCategories_Click;
+            // 
+            // btn_AdminDashboard
+            // 
+            btn_AdminDashboard.Cursor = Cursors.Hand;
+            btn_AdminDashboard.Dock = DockStyle.Top;
+            btn_AdminDashboard.FlatAppearance.BorderSize = 0;
+            btn_AdminDashboard.FlatAppearance.MouseDownBackColor = Color.FromArgb(35, 35, 42);
+            btn_AdminDashboard.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 33);
+            btn_AdminDashboard.FlatStyle = FlatStyle.Flat;
+            btn_AdminDashboard.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btn_AdminDashboard.ForeColor = Color.FromArgb(16, 185, 129);
+            btn_AdminDashboard.Location = new Point(0, 10);
+            btn_AdminDashboard.Name = "btn_AdminDashboard";
+            btn_AdminDashboard.Padding = new Padding(22, 0, 10, 0);
+            btn_AdminDashboard.Size = new Size(250, 50);
+            btn_AdminDashboard.TabIndex = 0;
+            btn_AdminDashboard.Text = "Admin Dashboard";
+            btn_AdminDashboard.TextAlign = ContentAlignment.MiddleLeft;
+            btn_AdminDashboard.UseVisualStyleBackColor = true;
+            btn_AdminDashboard.Click += btn_AdminDashboard_Click;
             // 
             // pnlSidebarBottom
             // 
@@ -313,6 +335,7 @@ namespace Co_LAB
             content_adminpan.Name = "content_adminpan";
             content_adminpan.Size = new Size(950, 632);
             content_adminpan.TabIndex = 0;
+            content_adminpan.Paint += content_adminpan_Paint;
             // 
             // AdminMainForm
             // 
@@ -348,6 +371,7 @@ namespace Co_LAB
         private Label lblBrandSubtitle;
         private Panel pnlDividerTop;
         private Panel pnlNavContainer;
+        private Button btn_AdminDashboard;
         private Button btn_SkillCategories;
         private Button btn_ModerateListings;
         private Button btn_ReportedStudents;

@@ -1,9 +1,9 @@
 namespace Co_LAB
 {
     [System.ComponentModel.DesignerCategory("UserControl")]
-    public partial class uc_StudentDashboard : UserControl
+    public partial class uc_AdminDashboard : UserControl
     {
-        public uc_StudentDashboard()
+        public uc_AdminDashboard()
         {
             InitializeComponent();
         }

@@ -23,10 +23,10 @@ namespace Co_LAB
             btn_TradeRequests = new Button();
             btn_ManageSkills = new Button();
             btn_PostSkill = new Button();
-            btn_StudentDashboard = new Button();
+            btn_SkillExchange = new Button();
             pnlSidebarBottom = new Panel();
             btn_SignOut = new Button();
-            lblStudentInfo = new Label();
+            btn_UserDashboard = new Button();
             pnlDividerBottom = new Panel();
             pnlBrand = new Panel();
             pnlDividerTop = new Panel();
@@ -64,7 +64,7 @@ namespace Co_LAB
             pnlNavContainer.Controls.Add(btn_TradeRequests);
             pnlNavContainer.Controls.Add(btn_ManageSkills);
             pnlNavContainer.Controls.Add(btn_PostSkill);
-            pnlNavContainer.Controls.Add(btn_StudentDashboard);
+            pnlNavContainer.Controls.Add(btn_SkillExchange);
             pnlNavContainer.Dock = DockStyle.Fill;
             pnlNavContainer.Location = new Point(0, 85);
             pnlNavContainer.Name = "pnlNavContainer";
@@ -115,7 +115,7 @@ namespace Co_LAB
             btn_ManageSkills.Padding = new Padding(22, 0, 10, 0);
             btn_ManageSkills.Size = new Size(250, 50);
             btn_ManageSkills.TabIndex = 2;
-            btn_ManageSkills.Text = "Offered Skills";
+            btn_ManageSkills.Text = "My Listings";
             btn_ManageSkills.TextAlign = ContentAlignment.MiddleLeft;
             btn_ManageSkills.UseVisualStyleBackColor = true;
             btn_ManageSkills.Click += btn_ManageSkills_Click;
@@ -140,30 +140,30 @@ namespace Co_LAB
             btn_PostSkill.UseVisualStyleBackColor = true;
             btn_PostSkill.Click += btn_PostSkill_Click;
             // 
-            // btn_StudentDashboard
+            // btn_SkillExchange
             // 
-            btn_StudentDashboard.Cursor = Cursors.Hand;
-            btn_StudentDashboard.Dock = DockStyle.Top;
-            btn_StudentDashboard.FlatAppearance.BorderSize = 0;
-            btn_StudentDashboard.FlatAppearance.MouseDownBackColor = Color.FromArgb(35, 35, 42);
-            btn_StudentDashboard.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 33);
-            btn_StudentDashboard.FlatStyle = FlatStyle.Flat;
-            btn_StudentDashboard.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btn_StudentDashboard.ForeColor = Color.FromArgb(16, 185, 129);
-            btn_StudentDashboard.Location = new Point(0, 10);
-            btn_StudentDashboard.Name = "btn_StudentDashboard";
-            btn_StudentDashboard.Padding = new Padding(22, 0, 10, 0);
-            btn_StudentDashboard.Size = new Size(250, 50);
-            btn_StudentDashboard.TabIndex = 0;
-            btn_StudentDashboard.Text = "Student Dashboard";
-            btn_StudentDashboard.TextAlign = ContentAlignment.MiddleLeft;
-            btn_StudentDashboard.UseVisualStyleBackColor = true;
-            btn_StudentDashboard.Click += btn_StudentDashboard_Click;
+            btn_SkillExchange.Cursor = Cursors.Hand;
+            btn_SkillExchange.Dock = DockStyle.Top;
+            btn_SkillExchange.FlatAppearance.BorderSize = 0;
+            btn_SkillExchange.FlatAppearance.MouseDownBackColor = Color.FromArgb(35, 35, 42);
+            btn_SkillExchange.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 33);
+            btn_SkillExchange.FlatStyle = FlatStyle.Flat;
+            btn_SkillExchange.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btn_SkillExchange.ForeColor = Color.FromArgb(16, 185, 129);
+            btn_SkillExchange.Location = new Point(0, 10);
+            btn_SkillExchange.Name = "btn_SkillExchange";
+            btn_SkillExchange.Padding = new Padding(22, 0, 10, 0);
+            btn_SkillExchange.Size = new Size(250, 50);
+            btn_SkillExchange.TabIndex = 0;
+            btn_SkillExchange.Text = "Skill Exchange";
+            btn_SkillExchange.TextAlign = ContentAlignment.MiddleLeft;
+            btn_SkillExchange.UseVisualStyleBackColor = true;
+            btn_SkillExchange.Click += btn_SkillExchange_Click;
             // 
             // pnlSidebarBottom
             // 
             pnlSidebarBottom.Controls.Add(btn_SignOut);
-            pnlSidebarBottom.Controls.Add(lblStudentInfo);
+            pnlSidebarBottom.Controls.Add(btn_UserDashboard);
             pnlSidebarBottom.Controls.Add(pnlDividerBottom);
             pnlSidebarBottom.Dock = DockStyle.Bottom;
             pnlSidebarBottom.Location = new Point(0, 620);
@@ -191,16 +191,25 @@ namespace Co_LAB
             btn_SignOut.UseVisualStyleBackColor = true;
             btn_SignOut.Click += btn_SignOut_Click;
             // 
-            // lblStudentInfo
+            // btn_UserDashboard
             // 
-            lblStudentInfo.AutoSize = true;
-            lblStudentInfo.Font = new Font("Segoe UI", 9F);
-            lblStudentInfo.ForeColor = Color.FromArgb(161, 161, 170);
-            lblStudentInfo.Location = new Point(22, 20);
-            lblStudentInfo.Name = "lblStudentInfo";
-            lblStudentInfo.Size = new Size(109, 15);
-            lblStudentInfo.TabIndex = 1;
-            lblStudentInfo.Text = "Student: Zach Plata";
+            btn_UserDashboard.Cursor = Cursors.Hand;
+            btn_UserDashboard.Dock = DockStyle.Top;
+            btn_UserDashboard.FlatAppearance.BorderSize = 0;
+            btn_UserDashboard.FlatAppearance.MouseDownBackColor = Color.FromArgb(35, 35, 42);
+            btn_UserDashboard.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 33);
+            btn_UserDashboard.FlatStyle = FlatStyle.Flat;
+            btn_UserDashboard.Font = new Font("Segoe UI", 9.5F);
+            btn_UserDashboard.ForeColor = Color.FromArgb(161, 161, 170);
+            btn_UserDashboard.Location = new Point(0, 1);
+            btn_UserDashboard.Name = "btn_UserDashboard";
+            btn_UserDashboard.Padding = new Padding(22, 0, 10, 0);
+            btn_UserDashboard.Size = new Size(250, 48);
+            btn_UserDashboard.TabIndex = 1;
+            btn_UserDashboard.Text = "👤 Zach Plata (Dashboard)";
+            btn_UserDashboard.TextAlign = ContentAlignment.MiddleLeft;
+            btn_UserDashboard.UseVisualStyleBackColor = true;
+            btn_UserDashboard.Click += btn_UserDashboard_Click;
             // 
             // pnlDividerBottom
             // 
@@ -278,6 +287,7 @@ namespace Co_LAB
             // 
             lblWelcome.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblWelcome.AutoSize = true;
+            lblWelcome.Cursor = Cursors.Hand;
             lblWelcome.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             lblWelcome.ForeColor = Color.FromArgb(16, 185, 129);
             lblWelcome.Location = new Point(780, 32);
@@ -285,6 +295,7 @@ namespace Co_LAB
             lblWelcome.Size = new Size(137, 17);
             lblWelcome.TabIndex = 1;
             lblWelcome.Text = "Welcome, Zach Plata";
+            lblWelcome.Click += lblWelcome_Click;
             // 
             // lblHeaderTitle
             // 
@@ -293,9 +304,9 @@ namespace Co_LAB
             lblHeaderTitle.ForeColor = Color.White;
             lblHeaderTitle.Location = new Point(30, 24);
             lblHeaderTitle.Name = "lblHeaderTitle";
-            lblHeaderTitle.Size = new Size(213, 30);
+            lblHeaderTitle.Size = new Size(160, 30);
             lblHeaderTitle.TabIndex = 0;
-            lblHeaderTitle.Text = "Student Dashboard";
+            lblHeaderTitle.Text = "Skill Exchange";
             // 
             // panelContent
             // 
@@ -331,7 +342,6 @@ namespace Co_LAB
             pnlSidebar.ResumeLayout(false);
             pnlNavContainer.ResumeLayout(false);
             pnlSidebarBottom.ResumeLayout(false);
-            pnlSidebarBottom.PerformLayout();
             pnlBrand.ResumeLayout(false);
             pnlBrand.PerformLayout();
             pnlHeader.ResumeLayout(false);
@@ -348,14 +358,14 @@ namespace Co_LAB
         private Label lblBrandSubtitle;
         private Panel pnlDividerTop;
         private Panel pnlNavContainer;
-        private Button btn_StudentDashboard;
+        private Button btn_SkillExchange;
         private Button btn_PostSkill;
         private Button btn_ManageSkills;
         private Button btn_TradeRequests;
         private Panel pnlNavIndicator;
         private Panel pnlSidebarBottom;
         private Panel pnlDividerBottom;
-        private Label lblStudentInfo;
+        private Button btn_UserDashboard;
         private Button btn_SignOut;
         private Panel pnlHeader;
         private Label lblHeaderTitle;

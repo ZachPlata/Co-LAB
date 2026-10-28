@@ -11,12 +11,22 @@ namespace Co_LAB
         private void AdminMainForm_Load(object sender, EventArgs e)
         {
             if (DesignMode) return;
-            btn_SkillCategories.PerformClick();
+            btn_AdminDashboard.PerformClick();
         }
 
         // ==========================================
         // SIDEBAR BUTTON CLICK EVENTS (TRANSITIONS)
         // ==========================================
+
+        private void btn_AdminDashboard_Click(object sender, EventArgs e)
+        {
+            uc_AdminDashboard frm = new uc_AdminDashboard();
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(frm);
+            frm.Show();
+            SetActiveButton(btn_AdminDashboard);
+            lblHeaderTitle.Text = "Admin Dashboard";
+        }
 
         private void btn_SkillCategories_Click(object sender, EventArgs e)
         {
@@ -60,7 +70,7 @@ namespace Co_LAB
 
         private void SetActiveButton(Button activeButton)
         {
-            Button[] navButtons = { btn_SkillCategories, btn_ModerateListings, btn_ReportedStudents, btn_UpdateTOS };
+            Button[] navButtons = { btn_AdminDashboard, btn_SkillCategories, btn_ModerateListings, btn_ReportedStudents, btn_UpdateTOS };
             foreach (var btn in navButtons)
             {
                 if (btn == activeButton)
@@ -84,6 +94,11 @@ namespace Co_LAB
             {
                 this.Close();
             }
+        }
+
+        private void content_adminpan_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

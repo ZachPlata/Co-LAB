@@ -32,14 +32,24 @@
     </EmbeddedResource>
 
     <!-- Student UserControls -->
-    <Compile Update="UCStudents\uc_StudentDashboard.cs">
+    <Compile Update="UCStudents\uc_SkillExchange.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UCStudents\uc_StudentDashboard.Designer.cs">
-      <DependentUpon>uc_StudentDashboard.cs</DependentUpon>
+    <Compile Update="UCStudents\uc_SkillExchange.Designer.cs">
+      <DependentUpon>uc_SkillExchange.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Update="UCStudents\uc_StudentDashboard.resx">
-      <DependentUpon>uc_StudentDashboard.cs</DependentUpon>
+    <EmbeddedResource Update="UCStudents\uc_SkillExchange.resx">
+      <DependentUpon>uc_SkillExchange.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCStudents\uc_UserDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_UserDashboard.Designer.cs">
+      <DependentUpon>uc_UserDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_UserDashboard.resx">
+      <DependentUpon>uc_UserDashboard.cs</DependentUpon>
     </EmbeddedResource>
 
     <Compile Update="UCStudents\uc_PostSkill.cs">
@@ -73,6 +83,16 @@
     </EmbeddedResource>
 
     <!-- Admin UserControls -->
+    <Compile Update="UCAdmin\uc_AdminDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCAdmin\uc_AdminDashboard.Designer.cs">
+      <DependentUpon>uc_AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCAdmin\uc_AdminDashboard.resx">
+      <DependentUpon>uc_AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+
     <Compile Update="UCAdmin\uc_SkillCategories.cs">
       <SubType>UserControl</SubType>
     </Compile>
