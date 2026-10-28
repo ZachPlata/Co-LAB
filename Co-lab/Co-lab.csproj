@@ -82,6 +82,26 @@
       <DependentUpon>uc_TradeRequests.cs</DependentUpon>
     </EmbeddedResource>
 
+    <Compile Update="UCStudents\uc_IncomingRequests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_IncomingRequests.Designer.cs">
+      <DependentUpon>uc_IncomingRequests.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_IncomingRequests.resx">
+      <DependentUpon>uc_IncomingRequests.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCStudents\uc_SentRequests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_SentRequests.Designer.cs">
+      <DependentUpon>uc_SentRequests.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_SentRequests.resx">
+      <DependentUpon>uc_SentRequests.cs</DependentUpon>
+    </EmbeddedResource>
+
     <!-- Admin UserControls -->
     <Compile Update="UCAdmin\uc_AdminDashboard.cs">
       <SubType>UserControl</SubType>
