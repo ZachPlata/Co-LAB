@@ -1,0 +1,117 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>Co_LAB</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Forms -->
+    <Compile Update="StudentMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StudentMainForm.Designer.cs">
+      <DependentUpon>StudentMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="StudentMainForm.resx">
+      <DependentUpon>StudentMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <!-- Student UserControls -->
+    <Compile Update="UCStudents\uc_StudentDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_StudentDashboard.Designer.cs">
+      <DependentUpon>uc_StudentDashboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_StudentDashboard.resx">
+      <DependentUpon>uc_StudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCStudents\uc_PostSkill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_PostSkill.Designer.cs">
+      <DependentUpon>uc_PostSkill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_PostSkill.resx">
+      <DependentUpon>uc_PostSkill.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCStudents\uc_ManageSkills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_ManageSkills.Designer.cs">
+      <DependentUpon>uc_ManageSkills.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_ManageSkills.resx">
+      <DependentUpon>uc_ManageSkills.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCStudents\uc_TradeRequests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCStudents\uc_TradeRequests.Designer.cs">
+      <DependentUpon>uc_TradeRequests.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCStudents\uc_TradeRequests.resx">
+      <DependentUpon>uc_TradeRequests.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <!-- Admin UserControls -->
+    <Compile Update="UCAdmin\uc_SkillCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCAdmin\uc_SkillCategories.Designer.cs">
+      <DependentUpon>uc_SkillCategories.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCAdmin\uc_SkillCategories.resx">
+      <DependentUpon>uc_SkillCategories.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCAdmin\uc_ModerateListings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCAdmin\uc_ModerateListings.Designer.cs">
+      <DependentUpon>uc_ModerateListings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCAdmin\uc_ModerateListings.resx">
+      <DependentUpon>uc_ModerateListings.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCAdmin\uc_ReportedStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCAdmin\uc_ReportedStudents.Designer.cs">
+      <DependentUpon>uc_ReportedStudents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCAdmin\uc_ReportedStudents.resx">
+      <DependentUpon>uc_ReportedStudents.cs</DependentUpon>
+    </EmbeddedResource>
+
+    <Compile Update="UCAdmin\uc_UpdateTOS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCAdmin\uc_UpdateTOS.Designer.cs">
+      <DependentUpon>uc_UpdateTOS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="UCAdmin\uc_UpdateTOS.resx">
+      <DependentUpon>uc_UpdateTOS.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

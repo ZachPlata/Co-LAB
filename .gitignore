@@ -1,0 +1,56 @@
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio cache & temporary files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.ide/
+*.pidb
+*.booproj
+
+## Roslyn and compiler caches
+*.Generated.*
+*.AssemblyInfoInputs.cache
+*.GenerateResource.cache
+*.sourcelink.json
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+
+## Windows thumbnail cache & OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+## Packages & publish
+*.nupkg
+*.snupkg
+*.appx
+*.appxbundle
+*.msixbundle
