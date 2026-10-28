@@ -25,10 +25,11 @@ namespace Co_LAB
             // 
             // panel1
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Location = new Point(5, 23);
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.FromArgb(24, 24, 27);
+            panel1.Location = new Point(0, 32);
             panel1.Name = "panel1";
-            panel1.Size = new Size(942, 609);
+            panel1.Size = new Size(950, 600);
             panel1.TabIndex = 0;
             // 
             // button1
@@ -43,7 +44,7 @@ namespace Co_LAB
             button1.ForeColor = Color.FromArgb(16, 185, 129);
             button1.Location = new Point(5, 0);
             button1.Name = "button1";
-            button1.Size = new Size(161, 26);
+            button1.Size = new Size(175, 29);
             button1.TabIndex = 1;
             button1.Text = "Incoming Requests";
             button1.UseVisualStyleBackColor = false;
@@ -59,9 +60,9 @@ namespace Co_LAB
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI Semibold", 9.5F);
             button2.ForeColor = Color.FromArgb(161, 161, 170);
-            button2.Location = new Point(166, 0);
+            button2.Location = new Point(184, 0);
             button2.Name = "button2";
-            button2.Size = new Size(154, 26);
+            button2.Size = new Size(160, 29);
             button2.TabIndex = 2;
             button2.Text = "Sent Requests";
             button2.UseVisualStyleBackColor = false;
@@ -70,9 +71,9 @@ namespace Co_LAB
             // pnlTabIndicator
             // 
             pnlTabIndicator.BackColor = Color.FromArgb(16, 185, 129);
-            pnlTabIndicator.Location = new Point(5, 23);
+            pnlTabIndicator.Location = new Point(5, 29);
             pnlTabIndicator.Name = "pnlTabIndicator";
-            pnlTabIndicator.Size = new Size(161, 3);
+            pnlTabIndicator.Size = new Size(175, 3);
             pnlTabIndicator.TabIndex = 3;
             // 
             // uc_TradeRequests
