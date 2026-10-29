@@ -17,10 +17,11 @@ namespace Co_LAB
 
             InitializeComponent();
 
-            textBoxNotes.Multiline = true;
-            textBoxNotes.ScrollBars = ScrollBars.Vertical;
-            textBoxNotes.Size = new Size(424, 116);
-            textBoxNotes.MinimumSize = new Size(424, 116);
+            TextBoxNotes.Multiline = true;
+
+            TextBoxNotes.Size = new Size(424, 116);
+            TextBoxNotes.MinimumSize = new Size(424, 116);
         }
+
     }
 }

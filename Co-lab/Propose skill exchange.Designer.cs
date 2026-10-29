@@ -31,12 +31,12 @@
             panel1 = new Panel();
             comboBox1 = new ComboBox();
             panel2 = new Panel();
+            radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
             maskedTextBox1 = new MaskedTextBox();
-            maskedTextBox2 = new MaskedTextBox();
+            TextBoxNotes = new MaskedTextBox();
             lblHeaderTitle = new Label();
             label1 = new Label();
-            radioButton2 = new RadioButton();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,6 +66,18 @@
             panel2.Size = new Size(424, 24);
             panel2.TabIndex = 2;
             // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            radioButton2.Location = new Point(251, 3);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(110, 19);
+            radioButton2.TabIndex = 1;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Online Sessions";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
@@ -85,13 +97,13 @@
             maskedTextBox1.Size = new Size(424, 23);
             maskedTextBox1.TabIndex = 3;
             // 
-            // maskedTextBox2
+            // TextBoxNotes
             // 
-            maskedTextBox2.Location = new Point(21, 373);
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(424, 23);
-            maskedTextBox2.SkipLiterals = false;
-            maskedTextBox2.TabIndex = 4;
+            TextBoxNotes.Location = new Point(21, 373);
+            TextBoxNotes.Name = "TextBoxNotes";
+            TextBoxNotes.Size = new Size(424, 23);
+            TextBoxNotes.SkipLiterals = false;
+            TextBoxNotes.TabIndex = 4;
             // 
             // lblHeaderTitle
             // 
@@ -115,18 +127,6 @@
             label1.TabIndex = 6;
             label1.Text = "Target Skill:";
             // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton2.Location = new Point(251, 3);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(110, 19);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Online Sessions";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
             // Propose_skill_exchange
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -134,7 +134,7 @@
             BackColor = Color.FromArgb(24, 24, 27);
             Controls.Add(label1);
             Controls.Add(lblHeaderTitle);
-            Controls.Add(maskedTextBox2);
+            Controls.Add(TextBoxNotes);
             Controls.Add(maskedTextBox1);
             Controls.Add(panel2);
             Controls.Add(comboBox1);
@@ -155,7 +155,7 @@
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private MaskedTextBox maskedTextBox1;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox TextBoxNotes;
         private Label lblHeaderTitle;
         private Label label1;
     }
