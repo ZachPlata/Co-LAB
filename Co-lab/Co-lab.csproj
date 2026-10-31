@@ -102,6 +102,16 @@
       <DependentUpon>uc_SentRequests.cs</DependentUpon>
     </EmbeddedResource>
 
+    <Compile Update="Propose skill exchange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Propose skill exchange.Designer.cs">
+      <DependentUpon>Propose skill exchange.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="Propose skill exchange.resx">
+      <DependentUpon>Propose skill exchange.cs</DependentUpon>
+    </EmbeddedResource>
+
     <!-- Admin UserControls -->
     <Compile Update="UCAdmin\uc_AdminDashboard.cs">
       <SubType>UserControl</SubType>
